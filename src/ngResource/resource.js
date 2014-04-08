@@ -591,6 +591,8 @@ angular.module('ngResource', ['ng']).
         };
       });
 
+      Resource.$route = route;
+      
       Resource.bind = function(additionalParamDefaults){
         return resourceFactory(url, extend({}, paramDefaults, additionalParamDefaults), actions);
       };
